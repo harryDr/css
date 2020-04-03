@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order</title>
+    <style>
+        .box{
+            width: 500px;
+            height: 500px;
+            background-color: #0f0;
+            /* box这个元素为 flex container */
+            display: flex; 
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: #f0f;
+            /* order: 决定items的顺序，数值越小越靠前，一般很少用 */
+            order: 7;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: #c0c;
+            order: 10;
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color: #a0a;
+            order: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+    </div>
+    <span>我是块级元素</span>
+</body>
+</html>

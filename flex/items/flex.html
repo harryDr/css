@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .box{
+            width: 500px;
+            height: 500px;
+            background-color: #0f0;
+            /* box这个元素为 flex container */
+            display: flex; 
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: #f0f;
+            /* felx：flex-grow,felx-shrink和felx-basis的简写，默认0,1,auto */
+            /* flex-grow 放大的比例，默认为0  空间大不会放大*/
+            /* flex-shrink 缩小的比例，默认为1 空间不足会缩小*/
+            /* felx-basis  items占据的主轴空间，优先级低于min/max-weight/height 高于weight/height*/
+            flex: 1;
+            /* flex-grow: 0.5; */
+            /* flex-shrink: .2; */
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: #c0c;
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color: #a0a;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+    </div>
+    <span>我是块级元素</span>
+</body>
+</html>
