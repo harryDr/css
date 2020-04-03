@@ -44,3 +44,24 @@ warp：多行
 warp-reverse（很少用）：多行（warp的反转）
 （5）felx-flow：是flex-direction||flex-warp的简写
 可以省略，顺序任意
+（6）align-content：决定了多行flex items在cross axis上的对齐方式
+stretch（默认值）：与align-items的stretch类似
+flex-start：与cross start对齐
+flex-end：与cross end对齐
+center：居中对齐
+space-between：与cross start和cross end对齐，中间距离相等
+space-evenly：从cross start到cross end中间距离相等
+space-around：中间距离是两边的一倍
+
+4.flex items属性：
+(1)order：决定了flex items的排布顺序（默认为0，按值的大小排序）
+(2)align-self：覆盖flex container设置的align-items
+  值：stretch、flex-start、flex-end、center、baseline
+(3)flex-grow：决定了flex items如何扩展
+  根据flex items中flex-grow的值对剩余空间进行均分
+(4)flex-shrink：决定了flex items如何收缩
+  根据flex items中flex-shrink的值对剩余空间进行均分
+(5)flex-basic：设置flex items在main axis方向上的base size
+  Min/max > flex-basic > width/height > size
+(6)flex：是flex-grow|flex-shrink|flex-basic的简写，可以指定1、2或3个值。
+ 
